@@ -1,0 +1,577 @@
+/*  G E N E R A L  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #33292a;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+a,a:visited {
+  text-decoration: none;
+  color:#fff
+}
+
+/* H E A D E R */
+
+.header {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.nadpis {
+  font-size: 175%; /* 28px */
+  margin: 0px;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.ikona {
+  text-align: center;
+  width: 70px;
+  height:50px ;
+  color:white;
+  filter: opacity(0.6) drop-shadow(0 0 0 white) brightness(10);
+}
+
+/* N A V - P R U H */
+
+.nav-pruh { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 2.5rem;
+  background-color: gray;
+}
+
+button {
+  margin-left: 10px;
+  background: gray;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back-btn {
+  background: gray;
+  width: 2.8rem;
+  height: 2rem;
+  padding-top: 8px;
+}
+
+.search-btn {
+  background: gray;
+  width: 2.8rem;
+  height: 2rem;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+/* N A V I G A C E */
+
+nav {
+  background-color: gray;
+}
+  
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: .8rem .8rem; /*1.5rem 2rem*/
+  color: #fff;
+  font-weight: 700;
+}
+
+nav li a:hover {
+  color: rgb(202, 200, 200);
+}
+
+/* N A V - B U R G E R */
+
+.burger {
+  margin: 0 auto
+}
+
+.burger-btn {
+  margin: 0 auto;
+  width: 2.8rem;
+  height: 2.5rem;
+  padding: 0.1rem;
+}
+
+/* C O N T E N T */
+
+.ikona-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ikona-home {
+  margin: 0 auto;
+  width: 50px;
+  height:50px ;
+  color:rgb(59, 58, 58);
+  filter: opacity(0.6) drop-shadow(0 0 0 rgb(59, 58, 58)) brightness(10);
+}
+
+.podnadpis {
+  text-align: center;
+  color: white /*rgb(204, 201, 201);*/;
+  padding-top: 35px;
+  letter-spacing: 1px;
+}
+
+.podnadpis-home,.podnadpis-home2   { /* button default neni cisty block*/
+  display: block;
+
+}
+
+.podnadpis-home {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  letter-spacing: 1px;
+  background-color: #33292a;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+ 
+}
+
+.podnadpis-home2 {
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+  letter-spacing: 1px;
+  background-color: #33292a;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+/* B O X Y */
+
+.boxy-flex-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxy-flex-seznam {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.box {
+  width: 90%;  /* stejně velké obrázky + max-width/height*/
+  height: 22em;
+  background-color: #33292a;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 0px;
+  text-align: center;
+  position: relative; /* - zakrýva vysunuté hamb. menu*/
+} 
+
+.box-seznam {
+  width: 90%;  /* stejně velké obrázky + max-width/height*/
+  height: 18em;
+  background-color: #33292a;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 0px;
+  text-align: center;
+  position: relative; /* - zakrýva vysunuté hamb. menu */
+} 
+
+.search-box {
+  width: 65%;
+  height: 9em;
+  background-color: black;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
+  position: relative; /* - zakrýva vysunuté hamb.
+  menu*/
+}
+
+/* I M G */
+
+.seznam-nahled {  /* wrapper */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height:77%;
+}
+
+.seznam-nahled-img { /*156.97, 117.72*/
+  width: 50%;  
+  height: 49%;  /* 46.9% */
+  border-radius: 20px;
+}
+
+h2 {
+  color: white;
+  padding-top: 10px;
+}
+
+h3 {
+  z-index: 1;
+  color: rgb(241, 237, 237);
+  padding-top: 230px; /*62%*/
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+}
+
+.box-seznam h3 {
+  z-index: 1;
+  color: rgb(241, 237, 237);
+  padding-top: 210px; /*62%*/
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+}
+
+h4 {
+  z-index: 1;
+  color: red;
+  padding-top: 5%;
+  display: inline-block;
+  position: relative;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.seznam-img,.seznam-img-levy {
+  position: absolute;
+  top: 95px;
+  right: 0px;
+  width: 100%;
+  height: 70%;  /* pro vlastnost auto obrázky stejné rozměry?*/
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.box-seznam.seznam-img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 80%;  /* pro vlastnost auto obrázky stejné rozměry?*/
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.seznam-img-prvni {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  width: 100%;
+  height: 70%;  /* pro vlastnost auto obrázky stejné rozměry?*/
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.seznam-img-ostatni {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 85.553%; /*246.39*/
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.box-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.box-search {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.img {
+  width: 100%;
+  height:250px;  /*?relativní jednotky nefungují? */
+}
+
+/* F O O T E R */
+
+.footer-home,
+.footer-seznam,
+.footer-nej {
+    margin-top: 50px;
+    height:60px;
+    background-color: rgb(83, 83, 83);
+}
+
+p {
+  font-size: 0.8rem;
+  background-color: rgb(83, 83, 83);
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* M E D I A  Q U E R I E S */
+
+/* // Malá zařízení (mobily, 576px a víc)
+@media (min-width: 576px) { ... }
+// Středně velká zařízení (tablety, 768px a víc)
+@media (min-width: 768px) { ... }
+// Velká zařízení (desktop, 992px a víc)
+@media (min-width: 992px) { ... }
+// Extra velká zařízení (velký desktop, 1200px a víc)
+@media (min-width: 1200px) { ... } */
+
+/* galaxy fold 280px */
+
+@media (max-width: 707px) {
+
+.nadpis {
+  font-size: 28px; /* 28px */
+}
+
+.navigation {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  position: absolute; /* menu zustava nahore*/
+  top: 203px;
+  background-color: rgb(87, 86, 86) ;/*#bec712*/
+  width: 100%;
+  align-items: center;
+  left: -100%;
+  transition: 0.3s ease-out;
+  z-index: 2; /*zajištuje neproklikavani skrze menu*/
+} 
+
+.navigation li {
+  width: 100%;
+  border: solid 0.1px black;
+}
+
+.navigation.active {
+  left: 0%;
+}
+}
+
+@media only screen and (min-width: 708px) {
+
+ .navigation {
+    display: block;
+  }
+  .burger {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+
+  .box {
+    width: 65%;  /* stejně velké obrázky + max-width/height*/
+    height: 28.111em;
+    background-color: #33292a;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; /* - zakrýva vysunuté hamb.
+    menu*/
+  }
+
+  .box h3 {
+    z-index: 1;
+    color: rgb(241, 237, 237);
+   /* padding-top: 295px; /*62%*/
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .podnadpis-home,.podnadpis-home2   { /* button default neni cisty block*/
+    display: block;
+  }
+  
+  .box-seznam {
+    width: 65%;  /* stejně velké obrázky + max-width/height*/
+    height: 23em;
+    background-color: #33292a;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative; /* - zakrýva vysunuté hamb.
+    menu*/
+  }
+
+  h3 {
+    z-index: 1;
+    color: rgb(241, 237, 237);
+    padding-top: 285px; /*62%*/
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+  }
+
+  .box-seznam h3 {
+    padding-top: 270px;
+  }
+}
+
+/* Destkop */
+
+@media only screen and (min-width: 992px) {
+
+.ikona-wrapper {
+  margin-top: 50px;
+}
+
+.boxy-flex-home {
+  display: flex;
+  flex-direction: row;
+  max-width: 80%;
+  margin: 0 auto;
+}
+  
+.boxy-flex-seznam {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+  
+.nav-pruh { 
+  justify-content: center;
+}
+   
+button {
+  margin-right: 10%;
+}
+
+.search-btn {
+ margin-left: 10%;
+}   
+
+nav ul {
+ text-align: end;
+}
+
+.podnadpis {
+ padding-top: 70px;
+}
+
+.podnadpis-home, .podnadpis-home2  {
+  margin-top: 0px;
+  text-decoration: none;
+}
+
+.podnadpis-home:hover, .podnadpis-home2:hover {
+  text-decoration: underline;
+}
+
+.boxy-flex-line {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 28%;  /* stejně velké obrázky + max-width/height*/
+  height: 22em;
+  background-color: #33292a;
+  border-radius: 20px;
+  margin: 0 auto;
+ margin-top: 25px;
+ text-align: center;
+  position: relative; /* - zakrýva vysunuté hamb.
+  menu*/
+}
+
+.box-seznam {
+  width: 28%;  /* stejně velké obrázky + max-width/height*/
+  height: 18em;
+  background-color: #33292a;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
+  position: relative; /* - zakrýva vysunuté hamb.
+  menu*/
+}
+
+.box-seznam h3 {
+  padding-top: 210px;
+}
+
+.seznam-nahled {  /* wrapper */
+  height:75.5%;
+  padding-top: 18px;
+}
+
+.footer-seznam {
+  margin-top: 50px;
+  height:60px;
+  background-color: rgb(83, 83, 83);
+  text-align: center;
+}
+
+.footer-home {
+    margin-top: 224px;  /* 181 */
+   /* height:3.5em;  */      /* 60px */
+    background-color: rgb(83, 83, 83);
+    text-align: center;
+}
+
+.footer-nej {
+  margin-top: 165px;
+  height:60px;
+  background-color: rgb(83, 83, 83);
+  text-align: center;
+}
+
+h3 {
+  padding-top: 225px; /*62%*/
+}
+
+p {
+  font-size: 0.8rem;
+  padding-top: 35px;
+}
+}
+
+
+
+
