@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEBKAMERY3</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <section class="header">
+        <h1 class="heading">ČESKÉ LIVE WEBKAMERY</h1>
+        <img class="icon" src="img/camera-png-icon-1.jpg" alt="camera icon">
+    </section>
+    <section class="nav-stripe">
+        <button onclick="history.back()">
+            <img class="back-btn" src="./img/back5.png"  alt="backward button">
+        </button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seznam.html">Webkamery</a></li>
+                <li><a href="nej.html">Nejoblíbenější</a></li>
+                <li><a href="posledni.html">Naposledy přidané</a></li>
+            </ul>
+            <div class="burger">
+                <img class="burger-btn" src="./img/Hamburger_icon.svg.png" alt="menu button">
+                <script src="./js/app.js"></script>
+            </div>
+        </nav>
+        <img class="search-btn" src="./img/search.png" alt="search button">
+    </section>
+        <div class="icon-wrapper">
+            <img class="icon-home" src="./img/home2.png" alt="home icon">
+        </div>   
+    <section class="boxy-flex-home">
+        <div class="box">
+            <button class="subheading-home" onclick="location.href='nej.html'">NEJOBLÍBENĚJŠÍ</button>
+            <a href="https://www.earthcam.com/czechrepublic/prague/?cam=grandhotel_str"><h3>Praha - Staroměstské náměstí</h3>
+                <img class="seznam-img" src="https://static.earthcam.com/hof/czechrepublic/prague/1664384435619_1.jpg"
+                alt="Praha - Staroměstské náměstí">
+            </a>
+        </div>
+        <div class="box">
+            <button class="subheading-home2" onclick="location.href='posledni.html'">NAPOSLEDY PŘIDANÉ</button>
+            <a href="https://www.brno.cz/online-web-kamera"><h3>Brno - Malinovského náměstí</h3>
+                <img class="seznam-img" src="https://apl.brno.cz/kamery/mal3/image.jpg"
+                alt="Brno - Malinovského náměstí">
+            </a>
+        </div>
+        <div class="box">
+            <button class="subheading-home2" onclick="location.href='seznam.html'">SEZNAM ABC</button>
+            <a href="seznam.html">
+                <div class="seznam-preview">
+                    <img class="seznam-preview-img" src="https://static.earthcam.com/hof/czechrepublic/prague/1664384435619_1.jpg" 
+                    alt="preview">
+                    <img class="seznam-preview-img" src="https://apl.brno.cz/kamery/mal3/image.jpg"
+                    alt="preview">
+                    <img class="seznam-preview-img" src="./img/podoli.jpg" 
+                    alt="preview">
+                    <img class="seznam-preview-img" src="./img/svatypetr.jpg" 
+                    alt="preview"> 
+                </div>
+            </a>
+        </div>   
+    </section>
+    <footer class="footer-home">
+        <p>© 2022 - 2023 ČESKÉ LIVE WEBKAMERY. VŠECHNA PRÁVA VYHRAZENA.</p>
+    </footer>
+</body>
+</html>
+
+
